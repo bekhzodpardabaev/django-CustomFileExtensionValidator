@@ -41,7 +41,9 @@ class CustomFileExtensionValidator:
 ```
 
 models.py
+```
 ...
     file = models.FileField(verbose_name=_("Rezyume Joylash"), upload_to=generate_upload_path,
                             validators=[CustomFileExtensionValidator(['pdf', 'doc', 'docx'])])
 ...
+```
